@@ -1,7 +1,7 @@
 """
 金融科技創新 - Step 2: ML 模型預測 IC + 投資組合建構
 =====================================================
-讀取: ic_data.csv (step1 產出)、12173212金融.xlsx (因子排序用)
+讀取: ic_data.csv (step1 產出)、taiwan_stock_data.xlsx (因子排序用)
 
 流程:
   1. 特徵工程: 以過去 N_LAG 期 IC 值作為輸入特徵
@@ -38,7 +38,7 @@ from tensorflow.keras.callbacks import EarlyStopping
 # 設定
 # ============================================================
 
-DATA_FILE  = '12173212金融.xlsx'
+DATA_FILE  = 'taiwan_stock_data.xlsx'
 IC_FILE    = 'ic_data.csv'
 
 N_LAG      = 321   # 用前 N_LAG 期 IC 作特徵（321×3=963≈Input(964)，與報告一致）

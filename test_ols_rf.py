@@ -11,7 +11,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 
-DATA_FILE   = '12173212金融.xlsx'
+DATA_FILE   = 'taiwan_stock_data.xlsx'
 IC_FILE     = 'ic_data.csv'
 N_LAG       = 321
 N_START     = 179

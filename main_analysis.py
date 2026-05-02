@@ -32,7 +32,7 @@ from tensorflow.keras.callbacks import EarlyStopping
 # ================================================================
 # 設定
 # ================================================================
-DATA_FILE   = '12173212金融.xlsx'
+DATA_FILE   = 'taiwan_stock_data.xlsx'
 IC_FILE     = 'ic_data.csv'
 N_LAG       = 321       # 特徵視窗長度（月），321×3=963≈Input(964)
 N_VAL       = 48        # NN 驗證集長度（月）

@@ -1,7 +1,7 @@
 """
 金融科技創新 - Step 1: 資料讀取、因子計算、IC 計算
 ================================================
-資料來源: 12173212金融.xlsx
+資料來源: taiwan_stock_data.xlsx
   Sheet1: 收盤價(元)      → Momentum 因子
   Sheet2: 市值(百萬元)    → Size 因子
   Sheet3: 股價淨值比-TEJ  → BM 因子
@@ -15,7 +15,7 @@ warnings.filterwarnings('ignore')
 import numpy as np
 import pandas as pd
 
-DATA_FILE = '12173212金融.xlsx'
+DATA_FILE = 'taiwan_stock_data.xlsx'
 
 # ============================================================
 # 1. 讀取資料

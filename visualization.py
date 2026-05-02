@@ -22,7 +22,7 @@ plt.rcParams['axes.unicode_minus'] = False
 plt.rcParams['figure.dpi']       = 150
 
 # ── 常數 ─────────────────────────────────────────────────────
-DATA_FILE   = '12173212金融.xlsx'
+DATA_FILE   = 'taiwan_stock_data.xlsx'
 IC_FILE     = 'ic_data.csv'
 PERF_FILE   = 'results_portfolio.csv'
 R2_FILE     = 'results_r2.csv'
