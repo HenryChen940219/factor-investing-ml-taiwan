@@ -1,0 +1,34 @@
+# 原始資料（TEJ授權資料，不上傳）
+*.xlsx
+*.xlsm
+
+# 分析結果（程式執行產生的輸出，不上傳）
+*.csv
+
+# 視覺化輸出（可由 visualization.py 重新產生）
+*.png
+
+# Python 快取
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虛擬環境
+venv/
+.venv/
+env/
+
+# 環境變數
+.env
+
+# 系統檔
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Log
+*.log
