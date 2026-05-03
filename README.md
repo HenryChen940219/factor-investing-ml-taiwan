@@ -4,6 +4,19 @@
 
 以三大量化因子（規模、帳面市值比、動能）的資訊係數（IC）時間序列為輸入，訓練多種機器學習模型預測下一期 IC，並據此建構多空投資組合，比較各模型在台灣股市的選股績效。
 
+## 互動式儀表板
+
+[![Tableau Dashboard](https://img.shields.io/badge/Tableau-互動式儀表板-blue?logo=tableau)](https://public.tableau.com/views/ML_17778235978420/sheet3)
+
+📊 [在 Tableau Public 檢視完整互動式儀表板](https://public.tableau.com/views/ML_17778235978420/sheet3)
+
+![儀表板預覽](dashboard_preview.png)
+
+儀表板包含三個視圖：
+- **IC 時間序列**：三因子（BM、Momentum、Size）資訊係數的月度走勢（1999–2025）
+- **模型勝率比較**：9 種模型的多空策略平均勝率
+- **樣本外 R² 比較**：各模型 × 各因子的預測能力熱力圖
+
 ## 研究概述
 
 ### 因子定義

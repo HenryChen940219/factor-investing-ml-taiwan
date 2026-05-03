@@ -7,6 +7,10 @@
 
 # 視覺化輸出（可由 visualization.py 重新產生）
 *.png
+!dashboard_preview.png
+
+# 隱藏資料夾
+.*/
 
 # Python 快取
 __pycache__/
