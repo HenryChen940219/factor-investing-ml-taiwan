@@ -117,7 +117,7 @@ def fill_cross_section_median(factor_df, ret_df):
     return f_filled, r_filled
 
 # ============================================================
-# 5. 單期 IC 計算（Pearson 相關係數）
+# 5. 單期 IC 計算（spearman 相關係數）
 # ============================================================
 
 def calc_IC_series(factor_df, ret_df, min_stocks=30):

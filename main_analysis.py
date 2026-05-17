@@ -34,7 +34,7 @@ from tensorflow.keras.callbacks import EarlyStopping
 # ================================================================
 DATA_FILE   = 'taiwan_stock_data.xlsx'
 IC_FILE     = 'ic_data.csv'
-N_LAG       = 321       # 特徵視窗長度（月），321×3=963≈Input(964)
+N_LAG       = 12        # 特徵視窗長度（月），12×3=36 特徵
 N_VAL       = 48        # NN 驗證集長度（月）
 N_START     = 179       # 第一個預測 IC 索引 → 對應 2013/12
 N_END       = 312       # 最後預測 IC 索引  → 對應 2025/01

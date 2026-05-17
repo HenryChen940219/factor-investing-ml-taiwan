@@ -61,12 +61,13 @@
 ## 檔案結構
 
 ```
-├── step1_data_prep.py     # 因子計算 & Spearman IC 時間序列產生 → ic_data.csv
-├── step2_ml_portfolio.py  # ML 模型 & 投資組合建構（模組化版本）
-├── main_analysis.py       # 完整分析主程式（整合全流程）→ results_portfolio.csv, results_r2.csv
-├── test_ols_rf.py         # 快速驗證流程（僅跑 OLS / RF）→ results_ols_rf.csv
-├── visualization.py       # 視覺化圖表產生（6 張圖）
-├── 金融期末報告.pdf        # 完整研究報告
+├── step1_data_prep.py        # 因子計算 & Spearman IC 時間序列產生 → ic_data.csv
+├── step2_ml_portfolio.py     # ML 模型 & 投資組合建構（模組化版本）
+├── main_analysis.py          # 完整分析主程式（整合全流程）→ results_portfolio.csv, results_r2.csv
+├── prepare_tableau_data.py   # 將結果轉為 Tableau 長格式 CSV → tableau_*.csv
+├── test_ols_rf.py            # 快速驗證流程（僅跑 OLS / RF）→ results_ols_rf.csv
+├── visualization.py          # 視覺化圖表產生（6 張圖）
+├── 金融期末報告.pdf           # 完整研究報告
 └── .gitignore
 ```
 
@@ -81,7 +82,11 @@ python step1_data_prep.py
 python main_analysis.py
 # 輸出: results_portfolio.csv, results_r2.csv
 
-# 步驟三：產生視覺化圖表
+# 步驟三：產生 Tableau 匯入用 CSV
+python prepare_tableau_data.py
+# 輸出: tableau_ic_series.csv, tableau_performance.csv, tableau_r2.csv
+
+# 步驟四：產生視覺化圖表
 python visualization.py
 # 輸出: fig1_IC_series.png ~ fig6_winrate_lines.png
 ```
