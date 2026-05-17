@@ -34,5 +34,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Log
+# Log 與暫存文字檔
 *.log
+analysis_log.txt
+conclusion_text.txt
